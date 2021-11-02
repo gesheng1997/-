@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical">
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        android:layout_weight="2"
+        android:padding = "5dp">
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入内容"
+            android:background = "@drawable/search_bar"
+            android:textSize = "20sp"
+            android:layout_weight="10"
+            android:drawableLeft="@drawable/search_icon"
+            android:maxLines = "1"
+            android:inputType="number"/>
+
+        <TextView
+            android:id = "@+id/tv"
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:text = "取消"
+            android:textSize = "15sp"
+            android:layout_marginLeft = "5dp"
+            android:layout_weight = "1"
+            android:background = "@drawable/cancel_button"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl"
+        android:layout_weight="14"></ListView>
+
+</RelativeLayout>
